@@ -12,9 +12,11 @@ jobs:
   install-and-run:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+      - name: Register checkout as tap
+        run: brew tap unitedideas/tap "file://$GITHUB_WORKSPACE"
       - name: Install formula
-        run: brew install --formula ./Formula/actablesite-check.rb
+        run: brew install unitedideas/tap/actablesite-check
       - name: Run formula test
         run: brew test actablesite-check
       - name: Check a live public robots file
