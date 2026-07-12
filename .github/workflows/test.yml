@@ -20,4 +20,4 @@ jobs:
       - name: Run formula test
         run: brew test actablesite-check
       - name: Check a live public robots file
-        run: actablesite-check actablesite.com --json | node -e 'let s=""; process.stdin.on("data", d => s += d); process.stdin.on("end", () => { const r = JSON.parse(s); if (r.results.length !== 8) process.exit(1); })'
+        run: actablesite-check actablesite.com --json | node -e 'let s=""; process.stdin.on("data", d => s += d); process.stdin.on("end", () => { const r = JSON.parse(s); if (r.crawlers.length !== 8) process.exit(1); })'
