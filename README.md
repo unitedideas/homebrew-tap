@@ -12,7 +12,7 @@ Then check a public website:
 actablesite-check example.com
 ```
 
-The formula is pinned to the signed-off [`actablesite-check` v1.0.0 release](https://github.com/unitedideas/actablesite-check/releases/tag/v1.0.0). The checker reports robots.txt policy for eight OpenAI, Anthropic, Perplexity, and Google AI crawler tokens.
+The formula is pinned to the signed-off [`actablesite-check` v1.1.0 release](https://github.com/unitedideas/actablesite-check/releases/tag/v1.1.0). The checker reports robots.txt policy for eight OpenAI, Anthropic, Perplexity, and Google AI crawler tokens.
 
 ## Update policy
 
