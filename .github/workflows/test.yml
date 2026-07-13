@@ -19,5 +19,5 @@ jobs:
         run: brew install unitedideas/tap/actablesite-check
       - name: Run formula test
         run: brew test actablesite-check
-      - name: Check a live public robots file
-        run: actablesite-check actablesite.com --edge --json | node -e 'let s=""; process.stdin.on("data", d => s += d); process.stdin.on("end", () => { const r = JSON.parse(s); if (r.crawlers.length !== 8 || r.edge?.crawlers?.length !== 3) process.exit(1); })'
+      - name: Check a live public indexability contract
+        run: actablesite-check actablesite.com --edge --json | node -e 'let s=""; process.stdin.on("data", d => s += d); process.stdin.on("end", () => { const r = JSON.parse(s); if (r.crawlers.length !== 8 || r.indexability?.responseStatus !== 200 || r.indexability?.noindex !== false || r.edge?.crawlers?.length !== 3) process.exit(1); })'

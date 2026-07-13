@@ -1,6 +1,6 @@
 # Homebrew tap for ActableSite
 
-Install the dependency-free AI crawler policy checker:
+Install the dependency-free website indexability and AI crawler policy checker:
 
 ```bash
 brew install unitedideas/tap/actablesite-check
@@ -12,9 +12,9 @@ Then check a public website:
 actablesite-check example.com
 ```
 
-The formula is pinned to the signed-off [`actablesite-check` v1.3.1 release](https://github.com/unitedideas/actablesite-check/releases/tag/v1.3.1). The checker reports robots.txt policy for eight OpenAI, Anthropic, Perplexity, and Google AI crawler tokens.
+The formula is pinned to the signed-off [`actablesite-check` v1.5.0 release](https://github.com/unitedideas/actablesite-check/releases/tag/v1.5.0). The checker reports homepage status, robots meta, X-Robots-Tag, canonical, and robots.txt policy for eight OpenAI, Anthropic, Perplexity, and Google AI crawler tokens.
 
-For ongoing checks, [Crawler Watch](https://actablesite.com/crawler-watch?utm_source=github&utm_medium=homebrew-tap&utm_campaign=crawler-watch) monitors one public website every 15 minutes and emails only after a changed state appears twice. It also checks external homepage responses, `sitemap.xml`, and `llms.txt`. The plan is $9/month; synthetic checks do not prove provider identity, indexing, citation, ranking, or traffic.
+For ongoing checks, [Crawler Watch](https://actablesite.com/crawler-watch?utm_source=github&utm_medium=homebrew-tap&utm_campaign=crawler-watch) monitors one public website every 15 minutes and emails only after a changed state appears twice. It also checks homepage indexability, synthetic crawler responses, `sitemap.xml`, and `llms.txt`. The plan is $9/month; returned HTML, headers, and synthetic requests do not prove provider identity, indexing, citation, ranking, or traffic.
 
 ## Update policy
 
