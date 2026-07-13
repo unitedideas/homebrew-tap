@@ -1,8 +1,8 @@
 class ActablesiteCheck < Formula
   desc "Check robots.txt policy for major AI crawler tokens"
   homepage "https://actablesite.com/ai-crawler-checker"
-  url "https://github.com/unitedideas/actablesite-check/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "4cdf553c9c43058a6ab5bb584c4c6dcf7e929d0e4c7df6a7d7b28856ba908fae"
+  url "https://github.com/unitedideas/actablesite-check/archive/refs/tags/v1.3.1.tar.gz"
+  sha256 "6143ff11641407cebbb26002ed8f33c022efbbcaf16dfbd8208c81a8dc554e04"
   license "MIT"
 
   depends_on "node"
