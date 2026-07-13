@@ -1,8 +1,8 @@
 class ActablesiteCheck < Formula
-  desc "Check robots.txt policy for major AI crawler tokens"
-  homepage "https://actablesite.com/ai-crawler-checker"
-  url "https://github.com/unitedideas/actablesite-check/archive/refs/tags/v1.3.1.tar.gz"
-  sha256 "6143ff11641407cebbb26002ed8f33c022efbbcaf16dfbd8208c81a8dc554e04"
+  desc "Check AI crawler robots policy and synthetic edge responses"
+  homepage "https://actablesite.com/cloudflare-ai-crawler-checker"
+  url "https://github.com/unitedideas/actablesite-check/archive/refs/tags/v1.4.0.tar.gz"
+  sha256 "f18fb06b6d5f4050d5c879ad4decfedb9678d2c37639cf8811923aed798dc169"
   license "MIT"
 
   depends_on "node"
@@ -19,5 +19,6 @@ class ActablesiteCheck < Formula
     output = shell_output("#{bin}/actablesite-check --starter")
     assert_match "User-agent: OAI-SearchBot", output
     assert_match "User-agent: GPTBot", output
+    assert_match "--edge", shell_output("#{bin}/actablesite-check --help")
   end
 end
