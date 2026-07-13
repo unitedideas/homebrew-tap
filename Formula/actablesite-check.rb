@@ -1,8 +1,8 @@
 class ActablesiteCheck < Formula
   desc "Check AI crawler robots policy and synthetic edge responses"
   homepage "https://actablesite.com/cloudflare-ai-crawler-checker"
-  url "https://github.com/unitedideas/actablesite-check/archive/refs/tags/v1.4.1.tar.gz"
-  sha256 "8cf65cf2febb88cdf342e17f8b9300f1a6e589800e8e76239ff2b9d076f41999"
+  url "https://github.com/unitedideas/actablesite-check/archive/refs/tags/v1.4.2.tar.gz"
+  sha256 "f0722b4f26d7eadc337750e12b1d459d6a1813694c50db943dccf6d0b87b5f19"
   license "MIT"
 
   depends_on "node"
